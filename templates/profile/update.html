@@ -126,8 +126,7 @@
                       id="preview"
                       src="{{ user.profile_pic.url }}"
                       alt="Profile Picture"
-                      class="rounded-circle border-3 border-primary object-fit-cover"
-                      style="width: 150px; height: 150px;"
+                      class="profile-pic-preview border-3 border-primary"
                     >
                   {% else %}
                     <div id="preview-placeholder" class="rounded-circle border-3 border-dashed border-secondary d-flex align-items-center justify-content-center bg-light" style="width: 150px; height: 150px;">
@@ -137,8 +136,7 @@
                       id="preview"
                       src=""
                       alt="Preview"
-                      class="rounded-circle border-3 border-primary object-fit-cover d-none"
-                      style="width: 150px; height: 150px;"
+                      class="profile-pic-preview border-3 border-primary d-none"
                     >
                   {% endif %}
                   <div class="upload-overlay">

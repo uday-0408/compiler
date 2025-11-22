@@ -93,9 +93,11 @@ def admin_problem_insert(request):
                         output_format=output_format,
                         constraints=constraints,
                         difficulty=difficulty,
-                        category=category,
                         tags=tags,
                     )
+
+                    # Add the category after creation (using the many-to-many relationship)
+                    problem.categories.add(category)
 
                     # Create starter code
                     starter_code = StarterCode.objects.create(

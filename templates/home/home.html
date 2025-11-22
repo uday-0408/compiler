@@ -20,8 +20,8 @@
 <section class="hero-section">
   <div class="container">
     <div class="hero-content animate-fade-in-up">
-      <h1 class="hero-title">Code, Learn, Excel</h1>
-      <p class="hero-subtitle">Master programming with our interactive coding platform. Write, compile, and test your code in multiple languages with real-time feedback.</p>
+      <h1 class="hero-title">Code. Run. Learn.</h1>
+      <p class="hero-subtitle">Build skills with instant in-browser code execution across multiple languages.</p>
       <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="{% url 'compile' %}" class="btn btn-modern-primary">
           <i class="bi bi-code-slash me-2"></i>Start Coding
@@ -159,7 +159,7 @@
 
 <!-- Statistics Section -->
 {% if user.is_authenticated %}
-<section class="py-5 bg-light">
+{% comment %} <section class="py-5 bg-light">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-3">
@@ -200,6 +200,6 @@
       </div>
     </div>
   </div>
-</section>
+</section> {% endcomment %}
 {% endif %}
 {% endblock %}

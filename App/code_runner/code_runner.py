@@ -71,6 +71,7 @@ def get_submission_result(token):
 def execute_code(code, language="python", input_data=""):
     """Execute code and return the result output or error."""
     try:
+        print(code)
         token = send_code_submission(code, language, input_data)
         time.sleep(2)  # Wait before fetching result
 

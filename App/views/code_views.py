@@ -15,7 +15,7 @@ from App.serializers import ProblemSerializer
 # Core models and execution
 from App.models import Problem
 
-# from App.code_runner.code_runner3 import execute_code
+# from App.code_runner.code_runner3 import execute_code  # docker
 
 from App.code_runner.code_runner import execute_code
 from App.mongo import log_submission_attempt, get_comments_for_problem, save_comment
